@@ -1,0 +1,41 @@
+.BannerDiscount {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "card message message"
+    "card promo promo";
+  grid-column-gap: 2rem;
+  align-items: center;
+
+  width: 100%;
+  height: 10rem;
+  border-bottom: 1px solid rgba($color-gray-light-1, 0.1);
+  line-height: 2.5rem;
+  background-color: $color-white-1;
+  box-shadow: $box-shadow-1;
+
+  &__card {
+    grid-area: card;
+    justify-self: right;
+    width: 4rem;
+  }
+
+  &__message {
+    grid-area: message;
+    align-self: flex-end;
+    justify-self: start;
+    margin-left: 2rem;
+    color: $color-black;
+  }
+
+  &__promo {
+    grid-area: promo;
+    justify-self: start;
+    align-self: flex-start;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $color-blue-light;
+  }
+}
