@@ -1,0 +1,23 @@
+.NavUser {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid rgba($color-gray-light-1, 0.1);
+  font-family: $font-primary;
+  padding: 1rem 0.75rem;
+
+  img {
+    width: 1.6rem;
+  }
+
+  p {
+    padding-left: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+  &__arrowRight {
+    margin-left: auto;
+  }
+}

@@ -5,6 +5,10 @@ import cart from "../assets/media/icons/cart-outline.svg";
 import HamburgerMenu from "react-hamburger-menu";
 
 function NavSearch() {
+  const handleClick = () => {
+    console.log("Hola");
+  };
+
   return (
     <nav className="Nav">
       <img className="Nav__logo" src={logoMeLi} alt="Logo de Mercado Libre" />
@@ -15,6 +19,8 @@ function NavSearch() {
       </form>
 
       <HamburgerMenu
+        isOpen={false}
+        menuClicked={handleClick.bind(this)}
         width={20}
         height={14}
         strokeWidth={1}
