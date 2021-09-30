@@ -1,0 +1,78 @@
+.Card-md {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border-radius: $border-radius-sm;
+  background-color: $color-white-1;
+  font-family: $font-primary;
+  box-shadow: $box-shadow-1;
+  overflow: hidden;
+
+  &__title {
+    display: block;
+    width: 100%;
+    padding: 1.25rem 1.75rem;
+    border-bottom: $border-card-md;
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+
+  figure {
+    img {
+      display: block;
+      width: 100%;
+      margin: 1.5rem auto;
+      object-fit: contain;
+      max-width: 32rem;
+      max-height: 32rem;
+    }
+  }
+
+  &__description {
+    padding: 0 1.75rem;
+    font-weight: 300;
+  }
+
+  &__price {
+    padding: 0.75rem 1.75rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+
+    &--month {
+      font-size: 1.4rem;
+      color: $color-green-dark;
+      padding: 0 1.75rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__button {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 1.75rem;
+    border: none;
+    border-top: $border-card-md;
+    outline: none;
+    color: $color-blue-light;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 500;
+    background-color: inherit;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      width: 2rem;
+      height: 2rem;
+      fill: $color-blue-light;
+      background-image: url("../../media/icons/chevron-forward-outline-btn.svg");
+    }
+  }
+}
