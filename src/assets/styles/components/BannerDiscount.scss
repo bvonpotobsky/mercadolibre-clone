@@ -5,7 +5,6 @@
   grid-template-areas:
     "card message message"
     "card promo promo";
-  grid-column-gap: 2rem;
   align-items: center;
 
   width: 100%;
@@ -17,23 +16,20 @@
 
   &__card {
     grid-area: card;
-    justify-self: right;
+    justify-self: center;
+    margin-left: 1rem;
     width: 4rem;
   }
 
   &__message {
     grid-area: message;
     align-self: flex-end;
-    justify-self: start;
-    margin-left: 2rem;
     color: $color-black;
   }
 
   &__promo {
     grid-area: promo;
-    justify-self: start;
     align-self: flex-start;
-    margin-left: 2rem;
     font-size: 1.5rem;
     font-weight: 400;
     color: $color-blue-light;
