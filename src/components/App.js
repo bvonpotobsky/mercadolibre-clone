@@ -6,6 +6,8 @@ import { LastSeen } from "./Cards/LastSeen";
 
 import desktopImg from "../assets/media/products/desktop-l.webp";
 import { Card } from "./Cards/Card/Card";
+import { Deals } from "../components/Cards/Deals";
+import { ProductColumn } from "./Cards/ProductColumn";
 
 function App() {
   return (
@@ -77,6 +79,39 @@ function App() {
             price="26.655"
           />
         </LastSeen>
+      </Card>
+
+      <Card title="Ofertas" btnValue="Ver todas">
+        <Deals>
+          <ProductColumn
+            image={desktopImg}
+            description="Escritorio Industrial. Hierro y Madera 160x160"
+            price="26.655"
+            priceMonth="6x $3.950 sin interés"
+            delivery="Envío gratis"
+          />
+          <ProductColumn
+            image={desktopImg}
+            description="Escritorio Industrial. Hierro y Madera 160x160"
+            price="26.655"
+            priceMonth="6x $3.950 sin interés"
+            delivery="Envío gratis"
+          />
+          <ProductColumn
+            image={desktopImg}
+            description="Escritorio Industrial. Hierro y Madera 160x160"
+            price="26.655"
+            priceMonth="6x $3.950 sin interés"
+            delivery="Envío gratis"
+          />
+          <ProductColumn
+            image={desktopImg}
+            description="Escritorio Industrial. Hierro y Madera 160x160"
+            price="26.655"
+            priceMonth="6x $3.950 sin interés"
+            delivery="Envío gratis"
+          />
+        </Deals>
       </Card>
     </>
   );

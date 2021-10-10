@@ -1,0 +1,48 @@
+.ProductColumn {
+  display: flex;
+  flex-direction: row;
+  border-top: $border-card-md;
+
+  &__image {
+    img {
+      display: block;
+      width: 80%;
+      margin: $sm auto;
+      object-fit: cover;
+      max-width: 20rem;
+      max-height: 20rem;
+    }
+  }
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    margin: $sm auto;
+
+    .ProductColumn__description {
+      font-size: 1.4rem;
+      font-weight: $sm;
+      color: $color-light-pink;
+    }
+
+    .ProductColumn__price {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      line-height: 4rem;
+
+      &--month {
+        font-size: 1.4rem;
+        color: $color-green-dark;
+      }
+    }
+
+    .ProductColumn__delivery {
+      font-size: 1.4rem;
+      color: $color-green-dark;
+      font-weight: 600;
+    }
+  }
+}
