@@ -1,10 +1,10 @@
 @import "./assets/styles/utils/variables.scss";
 @import "./assets/styles/utils/base.scss";
 
-@import "./assets/styles/components/Header.scss";
-@import "./assets/styles/components/NavSearch.scss";
-@import "./assets/styles/components/NavUser.scss";
+@import "./assets/styles/components/Header/NavSearch.scss";
+@import "./assets/styles/components/Header/NavUser.scss";
 
 @import "./assets/styles/components/BannerDiscount.scss";
 
-@import "./assets/styles/components/Card-md.scss";
+@import "./assets/styles/components/Cards/Card/Card.scss";
+@import "./assets/styles/components/Cards/Product.scss";

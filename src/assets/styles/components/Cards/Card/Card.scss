@@ -1,8 +1,8 @@
-.Card-md {
+.Card {
   position: relative;
   width: 95%;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 2.8rem;
   border-radius: $border-radius-sm;
   background-color: $color-white-1;
   font-family: $font-primary;
@@ -12,44 +12,15 @@
   &__title {
     display: block;
     width: 100%;
-    padding: 1.25rem 1.75rem;
+    padding: 1.6rem;
+    font-size: $lg;
     border-bottom: $border-card-md;
     text-align: left;
-    font-weight: 500;
-    letter-spacing: 0.3px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
   }
 
-  figure {
-    img {
-      display: block;
-      width: 100%;
-      margin: 1.5rem auto;
-      object-fit: contain;
-      max-width: 32rem;
-      max-height: 32rem;
-    }
-  }
-
-  &__description {
-    padding: 0 1.75rem;
-    font-weight: 300;
-  }
-
-  &__price {
-    padding: 0.75rem 1.75rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: 0.8px;
-
-    &--month {
-      font-size: 1.4rem;
-      color: $color-green-dark;
-      padding: 0 1.75rem;
-      padding-bottom: 1.5rem;
-    }
-  }
-
-  &__button {
+  .Card__button {
     position: relative;
     display: block;
     width: 100%;
@@ -58,7 +29,7 @@
     border-top: $border-card-md;
     outline: none;
     color: $color-blue-light;
-    font-size: 1.5rem;
+    font-size: $md;
     text-align: left;
     font-weight: 500;
     background-color: inherit;
@@ -72,7 +43,16 @@
       width: 2rem;
       height: 2rem;
       fill: $color-blue-light;
-      background-image: url("../../media/icons/chevron-forward-outline-btn.svg");
+      background-image: url("../../../../media/icons/chevron-forward-outline-btn.svg");
     }
   }
+}
+
+.grid-card {
+  background-color: $color-bg-meli;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1px;
 }

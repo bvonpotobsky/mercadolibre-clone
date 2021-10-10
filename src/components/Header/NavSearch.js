@@ -1,6 +1,6 @@
-import logoMeLi from "../assets/media/logo/meli.png";
-import search from "../assets/media/icons/search-outline.svg";
-import cart from "../assets/media/icons/cart-outline.svg";
+import logoMeLi from "../../assets/media/logo/meli.png";
+import search from "../../assets/media/icons/search-outline.svg";
+import cart from "../../assets/media/icons/cart-outline.svg";
 
 import HamburgerMenu from "react-hamburger-menu";
 

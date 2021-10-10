@@ -1,0 +1,41 @@
+.Product {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $color-white-1;
+}
+
+.Product__image {
+  align-self: center;
+
+  img {
+    display: block;
+    width: 80%;
+    margin: $sm auto;
+    object-fit: cover;
+    max-width: 32rem;
+    max-height: 32rem;
+  }
+}
+
+.Product__description {
+  padding: 0 1.75rem;
+  font-size: $sm;
+  font-weight: 300;
+  color: $color-light-pink;
+}
+
+.Product__price {
+  padding: 0 1.75rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  letter-spacing: 0.8px;
+
+  &--month {
+    font-size: 1.4rem;
+    color: $color-green-dark;
+    padding: 0 1.75rem;
+    line-height: 2.8rem;
+  }
+}

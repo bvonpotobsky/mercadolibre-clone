@@ -1,4 +1,4 @@
-import cardIcon from "../assets/media/icons/card-outline.svg";
+import cardIcon from "../../assets/media/icons/card-outline.svg";
 
 function BannerDiscount() {
   return (

@@ -1,23 +1,28 @@
 .NavUser {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  padding: $sm 0.8rem;
   border-top: 1px solid rgba($color-gray-light-1, 0.1);
   font-family: $font-primary;
-  padding: 1rem 0.75rem;
+  background-color: $color-meli;
 
-  img {
+  // Location icon
+  img:first-of-type {
+    width: 1.6rem;
+  }
+  // Arrow right
+  img:nth-of-type(2) {
+    margin-left: auto;
     width: 1.6rem;
   }
 
   p {
     padding-left: 0.5rem;
-    font-size: 1.3rem;
+    font-size: $sm;
     font-weight: 300;
-  }
-
-  &__arrowRight {
-    margin-left: auto;
   }
 }

@@ -10,28 +10,29 @@
   width: 100%;
   height: 10rem;
   border-bottom: 1px solid rgba($color-gray-light-1, 0.1);
-  line-height: 2.5rem;
+  line-height: 2.4rem;
   background-color: $color-white-1;
   box-shadow: $box-shadow-1;
 
   &__card {
     grid-area: card;
     justify-self: center;
-    margin-left: 1rem;
+    margin-left: $sm;
     width: 4rem;
   }
 
   &__message {
     grid-area: message;
     align-self: flex-end;
+    font-size: $md;
     color: $color-black;
   }
 
   &__promo {
     grid-area: promo;
     align-self: flex-start;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: $sm;
+    font-weight: 500;
     color: $color-blue-light;
   }
 }
